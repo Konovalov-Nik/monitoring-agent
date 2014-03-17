@@ -7,7 +7,7 @@ import java.util.*;
 import models.*;
 import util.SampleHelper;
 
-public class MonitoringController extends Controller {
+public class LoadAvgController extends Controller {
 
     public static void lastLoadAvg(int count) {
         if (count == 0) {
@@ -54,9 +54,9 @@ public class MonitoringController extends Controller {
         List<LoadAvgSample> all = LoadAvgSample.all().fetch();
         List<LoadAvgSample> samples = SampleHelper.getLastN(all, count);
 
-        double m1 = -1;
-        double m5 = -1;
-        double m15 = -1;
+        double m1 = Double.MAX_VALUE;
+        double m5 = Double.MAX_VALUE;
+        double m15 = Double.MAX_VALUE;
 
         for (LoadAvgSample sample : samples) {
             m1 = Math.min(m1, sample.oneMinute);

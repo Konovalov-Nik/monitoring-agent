@@ -7,7 +7,7 @@ require:
 repositories:
 
     - jboss:
-        type:       iBiblio
+        type:   iBiblio
         root:   "http://repository.jboss.org/nexus/content/groups/public-jboss/"
         contains:
             - org.hyperic -> *
