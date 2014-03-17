@@ -9,6 +9,6 @@ GET     /last/load_avg                         LoadAvgController.lastLoadAvg
 GET     /max/load_avg                          LoadAvgController.maxLoadAvg
 GET     /min/load_avg                          LoadAvgController.minLoadAvg
 
-GET     /last/mem_usage                         MemUsageController.lastLoadAvg
-GET     /max/mem_usage                          MemUsageController.maxLoadAvg
-GET     /min/mem_usage                          MemUsageController.minLoadAvg
+GET     /last/mem_usage                         MemUsageController.lastMemUsage
+GET     /max/mem_usage                          MemUsageController.maxMemUsage
+GET     /min/mem_usage                          MemUsageController.minMemUsage
