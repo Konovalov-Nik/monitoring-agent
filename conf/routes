@@ -1,0 +1,10 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# Ignore favicon requests
+GET     /favicon.ico                            404
+
+GET     /last/load_avg                         MonitoringController.lastLoadAvg
+GET     /max/load_avg                          MonitoringController.maxLoadAvg
+GET     /min/load_avg                          MonitoringController.minLoadAvg

@@ -1,0 +1,13 @@
+# Application dependencies
+
+require:
+    - play
+    - org.hyperic -> sigar 1.6.5.132
+
+repositories:
+
+    - jboss:
+        type:       iBiblio
+        root:   "http://repository.jboss.org/nexus/content/groups/public-jboss/"
+        contains:
+            - org.hyperic -> *
